@@ -29,20 +29,19 @@
 
 ## Table of Contents <!-- omit in TOC -->
 
-- [📖 Documentation](#-documentation)
-- [⚡ Supercharge your Meilisearch experience](#-supercharge-your-meilisearch-experience)
-- [🔧 Installation](#-installation)
-- [🚀 Getting started](#-getting-started)
-- [🤖 Compatibility with Meilisearch](#-compatibility-with-meilisearch)
-- [💡 Learn more](#-learn-more)
-- [⚙️ Contributing](#️-contributing)
+-   [📖 Documentation](#-documentation)
+-   [⚡ Supercharge your Meilisearch experience](#-supercharge-your-meilisearch-experience)
+-   [🔧 Installation](#-installation)
+-   [🚀 Getting started](#-getting-started)
+-   [🤖 Compatibility with Meilisearch](#-compatibility-with-meilisearch)
+-   [💡 Learn more](#-learn-more)
+-   [⚙️ Contributing](#️-contributing)
 
 ## 📖 Documentation
 
 This readme contains all the documentation you need to start using this Meilisearch SDK.
 
 For general information on how to use Meilisearch—such as our API reference, tutorials, guides, and in-depth articles—refer to our [main documentation website](https://www.meilisearch.com/docs/).
-
 
 ## ⚡ Supercharge your Meilisearch experience
 
@@ -51,6 +50,7 @@ Say goodbye to server deployment and manual updates with [Meilisearch Cloud](htt
 ## 🔧 Installation
 
 With `go get` in command line:
+
 ```bash
 go get github.com/meilisearch/meilisearch-go
 ```
@@ -140,17 +140,20 @@ func main() {
 ```
 
 JSON output:
+
 ```json
 {
-  "hits": [{
-    "id": 6,
-    "title": "Philadelphia",
-    "genres": ["Drama"]
-  }],
-  "offset": 0,
-  "limit": 10,
-  "processingTimeMs": 1,
-  "query": "philoudelphia"
+    "hits": [
+        {
+            "id": 6,
+            "title": "Philadelphia",
+            "genres": ["Drama"]
+        }
+    ],
+    "offset": 0,
+    "limit": 10,
+    "processingTimeMs": 1,
+    "query": "philoudelphia"
 }
 ```
 
@@ -174,6 +177,7 @@ func main() {
 ```
 
 JSON output:
+
 ```json
 {
     "hits": [
@@ -217,18 +221,18 @@ searchRes, err := index.Search("wonder",
 
 ```json
 {
-  "hits": [
-    {
-      "id": 2,
-      "title": "Wonder Woman",
-      "genres": ["Action","Adventure"]
-    }
-  ],
-  "offset": 0,
-  "limit": 20,
-  "estimatedTotalHits": 1,
-  "processingTimeMs": 0,
-  "query": "wonder"
+    "hits": [
+        {
+            "id": 2,
+            "title": "Wonder Woman",
+            "genres": ["Action", "Adventure"]
+        }
+    ],
+    "offset": 0,
+    "limit": 20,
+    "estimatedTotalHits": 1,
+    "processingTimeMs": 0,
+    "query": "wonder"
 }
 ```
 
@@ -240,10 +244,10 @@ This package guarantees compatibility with [version v1.x of Meilisearch](https:/
 
 The following sections in our main documentation website may interest you:
 
-- **Manipulate documents**: see the [API references](https://www.meilisearch.com/docs/reference/api/documents) or read more about [documents](https://www.meilisearch.com/docs/learn/core_concepts/documents).
-- **Search**: see the [API references](https://www.meilisearch.com/docs/reference/api/search) or follow our guide on [search parameters](https://www.meilisearch.com/docs/reference/api/search#search-parameters).
-- **Manage the indexes**: see the [API references](https://www.meilisearch.com/docs/reference/api/indexes) or read more about [indexes](https://www.meilisearch.com/docs/learn/core_concepts/indexes).
-- **ClientConfigure the index settings**: see the [API references](https://www.meilisearch.com/docs/reference/api/settings) or follow our guide on [settings parameters](https://www.meilisearch.com/docs/reference/api/settings#settings_parameters).
+-   **Manipulate documents**: see the [API references](https://www.meilisearch.com/docs/reference/api/documents) or read more about [documents](https://www.meilisearch.com/docs/learn/core_concepts/documents).
+-   **Search**: see the [API references](https://www.meilisearch.com/docs/reference/api/search) or follow our guide on [search parameters](https://www.meilisearch.com/docs/reference/api/search#search-parameters).
+-   **Manage the indexes**: see the [API references](https://www.meilisearch.com/docs/reference/api/indexes) or read more about [indexes](https://www.meilisearch.com/docs/learn/core_concepts/indexes).
+-   **ClientConfigure the index settings**: see the [API references](https://www.meilisearch.com/docs/reference/api/settings) or follow our guide on [settings parameters](https://www.meilisearch.com/docs/reference/api/settings#settings_parameters).
 
 ## ⚙️ Contributing
 
